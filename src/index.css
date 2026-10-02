@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-paper: 246 244 239;
+  --color-surface: 255 255 255;
+  --color-ink: 35 37 32;
+  --color-muted: 107 106 95;
+  --color-border: 223 218 205;
+  --color-primary: 29 92 99;
+  --color-primary-bright: 46 134 171;
+  --color-primary-dark: 18 59 64;
+  --color-profit: 87 115 75;
+  --color-expense: 162 73 54;
+  --color-gold: 171 121 36;
+  --color-violet: 108 79 140;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-paper: 20 23 25;
+  --color-surface: 29 33 36;
+  --color-ink: 236 232 221;
+  --color-muted: 158 155 148;
+  --color-border: 50 55 58;
+  --color-primary: 70 160 170;
+  --color-primary-bright: 103 196 224;
+  --color-primary-dark: 163 224 232;
+  --color-profit: 135 177 117;
+  --color-expense: 224 141 120;
+  --color-gold: 224 175 97;
+  --color-violet: 173 148 209;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  transition: background-color 0.25s ease;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--color-primary-bright));
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgb(var(--color-primary) / 0.25);
+}
